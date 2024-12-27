@@ -31,9 +31,10 @@ useEffect(() => {
 
 <section id="products" className="container mt-5">
   <div className="row">
-    
-    {products.map(product => <Products product={product}/>
-    )}
+
+    {products.length > 0 ? products.map(product => <Products product={product}/>
+    ) :
+    <h2>No products found</h2>}
     
    
   </div>
