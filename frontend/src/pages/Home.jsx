@@ -23,9 +23,7 @@ useEffect(() => {
   fetchProducts();
 }, [searchParam]); 
 
-  return (
-
-    
+  return (    
     <Fragment>
  <h1 id="products_heading">Latest Products</h1>
 
