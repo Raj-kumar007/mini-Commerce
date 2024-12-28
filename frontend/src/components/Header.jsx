@@ -48,7 +48,6 @@ const Header = ({ cartItem }) => {
                 <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
                     <Link to={"/cart"}>
                         <span id="cart" className="ml-3">Cart</span>
-
                         <span className="ml-1" id="cart_count">{cartItem.length}</span>
                     </Link>
 

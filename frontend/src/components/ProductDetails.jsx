@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import {toast} from 'react-toastify'
+import { Link } from 'react-router-dom'
+
 
 const ProductDetails = ({cartItem , setCartItem}) => {
    const [products,setProduct] =useState(null)
@@ -59,7 +61,7 @@ toast.success("card add to success")
                 <img src={products.images[0].image} alt="sdf" height="500" width="500"/>
             </div>
             <div className="col-12 col-lg-5 mt-5">
-                <h3>{products.name}</h3>
+                 <Link to={"/"}>{products.name}</Link>
                 <p id="product_id">Product # 387874kkfjkf</p>
 
 
