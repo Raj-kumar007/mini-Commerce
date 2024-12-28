@@ -30,12 +30,19 @@ toast.success("card add to success")
        }
 
 
+
        function increase() {
-        if (products.stock  == qty) {
+        if (products.stock === 0){
+            toast.error("Product out of stock")
+            return;
+           
+        }
+        else if (products.stock  == qty) {
             return;
         }
         setQty(qty+1)
        }
+       
 
        function decrease() {
         if (qty > 1) {
